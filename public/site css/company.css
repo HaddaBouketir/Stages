@@ -1,0 +1,174 @@
+:root{
+    --main-color:#cda45e;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+*{
+    font-family: "Lucida Calligraphy";
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+body{
+    width: 100%;
+    background:  linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url("/images/home.jpeg");
+    margin: auto;
+    background-size: cover;
+}
+.hero{
+    margin-top: 100px;
+    margin-left: 200px;
+    color:white;
+    font-size: 50px;
+    font-weight: bold;
+}
+.hero:hover{
+    color: #cda45e;
+}
+.btn{
+    background: #cda45e;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.btn:hover{
+    background: #ad8032;
+    transform: translateY(15px);
+    transition: transforme 0.24s;
+}
+
+
+
+.table{
+    color: white;
+    margin-left: 200px;
+    font-size: 20px;
+   
+}
+.table th{
+    color: #d9ba85;
+    font-weight: bold;
+}
+.footer{
+    font-family: "Lucida Calligraphy";
+    background: rgba(12, 11, 9, 0.6);
+}
+.deznav{
+    font-family: "Lucida Calligraphy";
+    background: rgba(12, 11, 9, 0.6);
+}
+.header{
+    background: rgba(12, 11, 9, 0.6);   
+    color: white;
+}
+.header-info span{
+    color: white;
+}
+.form-control{
+    background:transparent;
+     border-radius:30px;
+    
+}
+.form-group{
+    padding-left: 100px;
+    padding-top: 100px;
+    color:#d9ba85;
+    font-size: 20px;
+    box-shadow: 0 5px 35px hsla(0, 4%, 57%, 0.959);width: 900px; height: 650px; margin-left: 40px;
+}
+.form-group input{
+    background: transparent;
+    border-bottom: 3px solid #d9ba85;
+    margin-left: 5px;
+    margin-top: -42px;
+    color: white;
+    font-size: 20px;
+}
+.form-group label{
+    margin-left: 25px;
+    font-weight:bold;
+    font-size: 25px;
+    color: white;   font-family: "Lucida Calligraphy";
+}
+.form-group .form-control{
+    color:white;
+    width: 100px; border-radius: 30px;
+    margin-top: 20px;margin-left: 25px;border-bottom-left-radius: 5px; border-color: #d9ba85;
+}
+.form-select{
+    background:#d9ba85 ;
+    width: 400px;
+    color: white; font-size: 20px;border-radius: 30px; border-bottom-left-radius: 5px;margin-left: 25px;
+}
+.search-form{
+   
+    position: absolute;
+    font-weight: bold;
+    background:transparent;
+    width: 380px;
+    height: 40px;
+    border: 3px solid #cda45e;
+    margin-top: 15px;
+    border-right: none;
+    font-size: 16px;
+    color:white;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+.btnn{
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-left:350px; 
+    background:#cda45e;
+    width: 200px; 
+    font-size: 20px; font-weight: bold;
+    color:white;height: 50px;
+    
+}
+.btnn:hover{
+    transform: translateY(15px);
+    transition: transforme 0.24s;
+}
+.placeholder{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.card{
+    width: 500px;
+    height: 400px;
+    font-size: 25px;
+    background:transparent ;
+    border-radius: 15px;
+    color: white;
+    margin-left: -100px;  
+    transform: translateY(15px);
+    transition: transforme 0.24s;
+    box-shadow: 0 5px 35px hsla(0, 4%, 57%, 0.959) ;
+
+}
+.product-name{
+    color: #cda45e;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 22px;
+}
+.product-name:hover{
+    color: white;
+    transform: translateY(15px);
+    transition: transforme 0.24s;
+}
+.img-show{
+    margin-top: -100px; margin-left: -200px;
+    transform: translateY(15px);
+    transition: transforme 0.24s;
+}
