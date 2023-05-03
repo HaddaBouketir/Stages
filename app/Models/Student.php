@@ -9,7 +9,7 @@ class Student extends Model
 {
     use HasFactory;
     protected $fillable =  [
-        'name', 'email','image','compan_id','prenom','cv',
+        'name', 'email','image','compan_id','prenom','cv',student_id,
     ];
     public function compan(){
         return $this->belongsTo(Compan::class);
