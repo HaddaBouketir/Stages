@@ -1,5 +1,5 @@
-@extends('layouts.app')
-@section('content')
+@extends('entreprise.master')
+@section( 'content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="Container">
-    <div class="NAVBAR">
+  
             <div class="row justify-content-center">
          <h1 class="hero"><i class="fa  fa-plus" > Post Internship </i></h1>
                 <form action="{{ route('stages.store') }}" method="POST" enctype="multipart/form-data">
@@ -29,15 +29,13 @@
                 <input type="text" name="finish"  value="{{ old('finish') }}">
                 <br><br>
               
-                <h3 style="margin-left: 20px;">Select your Company</h3>
+                <h3 style="margin-left: 20px; color:white;">Select your Company</h3>
                 <select name="compan_id" class="form-select"  >
                     @foreach ($compans as $compan)
                     <option style="background:#d9ba85;"  value="{{ $compan->id}}">{{$compan->name}}</option>
                     @endforeach
                     </select>
-        <br>
-           
-                   
+        <br>  <br>   <br>           
     <button type="submit" style="margin-left: 20px;"class="btn " ><i class="fa  fa-bookmark" > Post</i></button>
 </form>
 </div>

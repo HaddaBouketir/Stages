@@ -48,7 +48,7 @@
         ***********************************-->
         <div
          class="nav-header" style="background:rgba(12, 11, 9, 0.6); ">
-            <img src="images/logo.png" style="width: 170px;" alt="">
+      
             <div class="nav-control">
                 <div class="hamburger" >
                     <span class="line"></span><span class="line"></span><span class="line"></span>
@@ -69,7 +69,7 @@
         <!--**********************************
             Header start
         ***********************************-->
-        @include('compans.body.header')
+        @include('etudiant.body.header')
         <!--**********************************
             Header end ti-comment-alt
         ***********************************-->
@@ -77,7 +77,7 @@
         <!--**********************************
             Sidebar start
         ***********************************-->
-   @include('compans.body.sidebar')
+   @include('etudiant.body.sidebar')
         <!--**********************************
             Sidebar end
         ***********************************-->
@@ -93,7 +93,7 @@
         <!--**********************************
             Footer start
         ***********************************-->
-    @include('compans.body.footer')
+  
         <!--**********************************
             Footer end
         ***********************************-->

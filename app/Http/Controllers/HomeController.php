@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Stage;
 use App\Models\Student;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Compan;
@@ -15,10 +15,7 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+  
 
     /**
      * Show the application dashboard.
@@ -27,7 +24,20 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $students = Student::with('compan')->get();
-        return view('students.index', compact('students'));;
+        $stages = Stage::with('compan')->get();
+        return view('etudiant.index', compact('stages'));
     }
+    public function entreprise()
+    {
+        $students = Student::with('compan')->get();
+     return view('entreprise.index', compact('students'));
+        return view('entreprise.index');
+    }
+    public function etudiant()
+    {
+        $stages = Stage::with('compan')->get();
+        return view('etudiant.index', compact('stages'));
+      
+    }
+
 }

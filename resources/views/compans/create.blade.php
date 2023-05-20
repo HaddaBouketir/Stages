@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/site css/company.css">
 </head>
 <body>
-<div class="NAVBAR">
 <div class="Container">
             <div class="row justify-content-center">
                 <h1 class="hero"><i class="fa  fa-plus" > Add Company </i></h1>

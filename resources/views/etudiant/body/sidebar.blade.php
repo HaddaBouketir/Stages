@@ -9,39 +9,40 @@
     <div class="deznav-scroll">
         <div class="main-profile">
             <div class="image-bx">
-                <img src="images/user-icon-image-18.jpg" alt="">
-                <a href="javascript:void(0);"><i class="fa fa-cog" aria-hidden="true" style=" color: white;font-size: 20px;font-weight: bold;"></i></a>
+                <img src="images/logo.jpg" >
+              
             </div>
-            <h5 class="name" style="color:white;"><span class="font-w400">Hello,</span> Admin</h5>
+            
         </div>
         <ul class="metismenu" id="menu" >
             <li class="nav-label first" >Main Menu</li>
-            <li class="nav-label">company</li>
+            <li class="nav-label">Student</li>
             <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-                <i class="fa fa-flag" style=" color: #cda45e;font-size: 30px;font-weight: bold;"></i>
+                <i class="fa fa-flask" style=" color: #cda45e;font-size: 30px;font-weight: bold;"></i>
                     <span class="nav-text" style="color:white;">Internship</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="{{ route('stages.create') }}" style="color:white;">Post internship</a></li>
+                    <li><a href="{{url('/sech')}}" style="color:white;">Search internship</a></li>
                 </ul>
 
             <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-                    <i class="fa fa-mobile" style=" color: #cda45e;font-size: 30px;font-weight: bold;"></i>
-                    <span class="nav-text" style="color:white;">Condidate Management</span>
+                    <i class="fa fa-building" style=" color: #cda45e;font-size: 30px;font-weight: bold;"></i>
+                    <span class="nav-text" style="color:white;">Jobs</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a  style="color:white;">View All Student</a></li>
+                    <li><a href="{{ route('jobs.create') }}" style="color:white;">Applying for a job</a></li>
                 </ul>
             </li>
-            <li class="nav-label" >Communication</li>
+            <li class="nav-label" >Message</li>
             <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-                    <i class="fa fa-info" style=" color: #cda45e;font-size: 30px;font-weight: bold;"></i>
-                    <span class="nav-text" style="color:white;">Communication</span>
-                </a>
-                <ul aria-expanded="false">
-                    <li><a href="{{ route('students.index') }}" style="color:white;">Messages</a></li>
+                    <i class="fa fa-comments" style=" color: #cda45e;font-size: 30px;font-weight: bold;"></i>
+                    <span class="nav-text" style="color:white;"> Messages</span>
+                    </a>
+                    <ul aria-expanded="false">
+                    <li><a href="{{ route('messages.create') }}" style="color:white;">Send Message</a></li>
                 </ul>
-            </li>
+                </li>
+            
         </ul>
         <div class="copyright" style="color:white;">
             <p><strong> © 2022 All Rights Reserved</strong></p>

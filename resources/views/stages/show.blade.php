@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="/site css/company.css">
 </head>
 <body>
-
-<div class="NAVBAR">
 <div class="Container">
     <h1 class="hero"><i class="fa fa-eye"> Show Internship </i></h1>
             <div class="row justify-content-center">
@@ -26,7 +24,6 @@
               <i class="fa fa-file-excel-o"> Internship Subject :  {{$stage->type}}</i><br>
               <i class="fa fa-calendar"> Start-Date :  {{$stage->start}}</i><br>
               <i class="fa fa-calendar"> Finish-Date :  {{$stage->finish}}</i><br>
-</div>
 </div>
 @endsection
 

@@ -1,4 +1,4 @@
-@extends('students.master')
+@extends('etudiant.master')
 @section('content')
 <!DOCTYPE html>
 <html lang="en">

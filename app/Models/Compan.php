@@ -12,7 +12,7 @@ class Compan extends Model
     protected $fillable = [
         'name', 'email',
     ];
-    public function students(){
+public function students(){
         return $this->belongsTo(Student::class);
 }
 public function stages(){

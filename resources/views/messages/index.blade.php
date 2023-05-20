@@ -1,5 +1,5 @@
-@extends('layouts.app')
-@section('content')
+@extends('entreprise.master')
+@section( 'content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,30 +12,32 @@
  
 <div class="container" >
     <div class="row justify-content-center">
-        <h1 class="hero"><i class="fa fa-building"> Company</i>
-            <a type="button" href="{{ route('compans.create')}}" class="btn "><i class="fa fa-plus-circle"> Add Company</i></a></h1>َ
+        <h1 class="hero"><i class="fa fa-comments"> message</i></h1>َ
         <table class="table ">
             <thead>
                 <tr>
                     <th scope="col">No</th>
                     <th scope="col">Name</th>
                     <th scope="col">E-mail</th>
+                    <th scope="col">subject</th>
+                    <th scope="col">message</th>
                     <th scope="col" >Action</th>
                 </tr>
             </thead>
             <tbody >
 
-                @foreach($compans as $compan)
+                @foreach($messages as $message)
                 <tr>
-                <th scope="row">{{$compan->id}}</th>
-                <td>{{$compan->name}}</td>
-                <td>{{$compan->email}}</td>
+                <th scope="row">{{$message->id}}</th>
+                <td>{{$message->name}}</td>
+                <td>{{$message->email}}</td>
+                <td>{{$message->subject}}</td>
+                <td>{{$message->message}}</td>
             <td>
-                <a class="btn" href="{{route('compans.edit',$compan)}}"><i class="fa fa fa-wrench"> Edit</i></a>
-                <form action="{{route('compans.destroy',$compan)}}" method="post" style="margin-left: 100px; margin-top:-37px;" >
+            <form action="{{route('messages.destroy',$message)}}" method="post"  >
                     @csrf
                     @method('DELETE')
-                    <button class="btn " type="submit"><i class="fa fa-trash"> Delete</i></button>
+                    <button class="btn" type="submit"><i class="fa fa-trash"> Delete</i></button>
             </form>
             </td>
         </tr>
